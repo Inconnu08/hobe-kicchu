@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "770546045628",
+    "firebase_url": "https://ovto-limited.firebaseio.com",
+    "project_id": "ovto-limited",
+    "storage_bucket": "ovto-limited.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770546045628:android:8c0e9407f3af1404",
+        "android_client_info": {
+          "package_name": "application.taufiqrahman.com.ovto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770546045628-reqi00elnvadgnog30toiaj60olaecdc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "application.taufiqrahman.com.ovto",
+            "certificate_hash": "afb2747ef0aa219688751b6aec47ae60070986d4"
+          }
+        },
+        {
+          "client_id": "770546045628-hd4pslc9idsl3d1i5sdtg7416ce5c9ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfO6wd1prXa6l0w4e-IGbTTGHLzm6LxW0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770546045628-hd4pslc9idsl3d1i5sdtg7416ce5c9ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

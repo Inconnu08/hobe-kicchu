@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_company_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="application.taufiqrahman.com.ovto.CompanyDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bggrad"
+        android:elevation="4dp"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="0dp">
+
+            <ImageView
+                android:id="@+id/dp"
+                android:layout_width="80dp"
+                android:layout_height="87dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cover"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/brand_logo" />
+
+            <TextView
+                android:id="@+id/generic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name"
+                android:layout_below="@+id/name"
+                android:maxLines="1"
+                android:text="Dhanmondi, Dhaka"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/cardView_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/generic_name"
+                android:layout_below="@+id/generic_name"
+                android:layout_marginTop="9dp"
+                android:maxLines="1"
+                android:text="CLOSED"
+                android:textColor="@color/googlePlus"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cardView_status"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#BDBDBD" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:textStyle="normal|bold" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cardView_raters"
+                android:layout_margin="20dp"
+                android:background="#BDBDBD" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/address_middle"
+                android:layout_margin="20dp"
+                android:background="#BDBDBD" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/phone"
+                android:layout_margin="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#BDBDBD" />
+
+            <TextView
+                android:id="@+id/promo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/phone_icon"
+                android:layout_below="@+id/divider4"
+                android:padding="10dp"
+                android:text="Current offers"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/promo_slider"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_below="@+id/promo_text" />
+
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/gallery_slider"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_below="@+id/gallery_text"
+                android:paddingBottom="20dp"/>
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/promo_slider"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#BDBDBD" />
+
+            <TextView
+                android:id="@+id/gallery_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/phone_icon"
+                android:layout_below="@+id/divider5"
+                android:padding="10dp"
+                android:text="Gallery"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/divider2"
+                android:layout_below="@+id/divider2"
+                android:src="@drawable/twotone_location_on_24" />
+
+            <Button
+                android:id="@+id/menubutton"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gallery_slider"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/round_theme_background"
+                android:onClick="openMenu"
+                android:text="Visit Food Menu"
+                android:textColor="#fff"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/phone_icon"
+                android:layout_alignStart="@+id/address_middle"
+                android:padding="10dp"
+                android:text="01727730582"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="38dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/location_icon"
+                android:layout_below="@+id/divider3"
+                android:src="@drawable/twotone_call_24" />
+
+            <View
+                android:id="@+id/divider0"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@+id/cardView_raters"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#BDBDBD" />
+
+            <TextView
+                android:id="@+id/cardView_raters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingtext"
+                android:layout_marginTop="6dp"
+                android:layout_toEndOf="@+id/raters_icon"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="7,809,666"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:onClick="openReviews"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/ratingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/circle_background_views"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="4.0★"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="57dp" />
+
+            <ImageView
+                android:id="@+id/raters_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/divider0"
+                android:layout_alignTop="@+id/cardView_raters"
+                android:src="@drawable/twotone_person_outline_24" />
+
+            <TextView
+                android:id="@+id/address_middle"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/divider2"
+                android:layout_toEndOf="@+id/location_icon"
+                android:padding="10dp"
+                android:text="Housebuilding, beside North Tower, front of Rajuk College, 7th floor, middle of মামার বাড়ি"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rvw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/cardView_raters"
+                android:layout_alignBottom="@+id/divider2"
+                android:layout_toEndOf="@+id/raters_icon"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="Reviews"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/phn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phone"
+                android:layout_alignBottom="@+id/divider4"
+                android:layout_toEndOf="@+id/phone_icon"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/adrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/address_middle"
+                android:layout_alignBottom="@+id/divider3"
+                android:layout_toEndOf="@+id/location_icon"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <!--<com.glide.slider.library.SliderLayout-->
+            <!--android:id="@+id/slider"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="215dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_marginTop="57dp" />-->
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

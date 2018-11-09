@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            android:paddingTop="10dp"
+            android:background="#eee">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#BDBDBD"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rlogo"
+                android:layout_width="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/brand_logo"
+                android:layout_alignParentStart="true"
+                android:layout_height="50dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#838383"/>
+
+            <TextView
+                android:id="@+id/restaurant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:maxLines="2"
+                android:text="Pizza Hut"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/rlogo"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="4.0"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/circle_background_views"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/divider"
+                android:layout_alignEnd="@+id/divider" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                style="@android:style/Widget.Material.RatingBar.Small"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:rating="5"
+                android:maxHeight="15dp"
+                android:maxWidth="6dp"
+                android:layout_alignParentRight="true"
+                android:numStars="5"
+                android:gravity="center_horizontal"
+                android:layout_alignBottom="@+id/rlogo"
+                android:layout_alignParentEnd="true"
+                android:progressTint="@color/colorPrimary"/>
+            <!--88 width-->
+
+            <ImageView
+                android:id="@+id/cardView_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_image"
+                android:layout_below="@+id/rating"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/generic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Dhanmondi, Dhaka"
+                android:textSize="17sp"
+                android:textColor="@color/gray"
+                android:layout_below="@+id/restaurant_name"
+                android:layout_toEndOf="@+id/loc" />
+
+            <ImageView
+                android:id="@+id/loc"
+                android:layout_width="24dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/twotone_location_on_24"
+                android:layout_height="30dp"
+                android:paddingTop="5dp"
+                android:tint="@color/black"
+                android:layout_alignBottom="@+id/generic_name"
+                android:layout_toEndOf="@+id/rlogo" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
